@@ -1,0 +1,200 @@
+/* RESET et STYLES GÉNÉRAUX */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* HEADER SECTION */
+.ticket-header {
+    background-image: url('../img/background3.jpg'); /* Image représentant l'expérience VIP */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.ticket-header .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Assombrit l'image pour un meilleur contraste */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ticket-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ticket-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* TICKET DETAILS SECTION */
+.ticket-details {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.ticket-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ticket-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.ticket-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.ticket-info ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.ticket-info .price {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #e91e63;
+}
+
+.ticket-info .price span {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.ticket-info .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ticket-info .btn:hover {
+    background-color: #388e3c;
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer .social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTONS STYLES */
+.btn {
+    display: inline-block;
+    background-color: #FF4081; /* Couleur du bouton */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* Couleur au survol */
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .ticket-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .ticket-header p {
+        font-size: 1rem;
+    }
+
+    .ticket-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .ticket-info .price {
+        font-size: 1.3rem;
+    }
+
+    .ticket-info .btn {
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ticket-header h1 {
+        font-size: 2rem;
+    }
+
+    .ticket-header p {
+        font-size: 0.9rem;
+    }
+
+    .ticket-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .ticket-info .price {
+        font-size: 1.1rem;
+    }
+
+    .ticket-info .btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

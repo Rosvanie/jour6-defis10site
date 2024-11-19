@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Intervenants - Événement Inspirant</title>
+    <link rel="stylesheet" href="../css/speakers.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Nos Intervenants</h1>
+            <p>Rencontrez les experts et les personnalités qui partageront leur savoir à cet événement exceptionnel.</p>
+        </div>
+    </header>
+
+    <!-- Speakers Section -->
+    <section class="speakers-section">
+        <!-- Intervenant 1 -->
+        <div class="speaker">
+            <img src="../img/speaker1.webp" alt="Jean Dupont">
+            <h3>Jean Dupont</h3>
+            <p class="specialty">Expert en Marketing Digital</p>
+            <p>Jean est un expert en stratégie numérique avec plus de 20 ans d'expérience. Il partagera des conseils pratiques pour optimiser votre présence en ligne.</p>
+            <p class="schedule">Horaires : 10h00 - 11h00</p>
+            <button class="btn-modal" onclick="openModal('modal1')">En savoir plus</button>
+            
+            <!-- Modal Content -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Jean Dupont</h2>
+                    <p><strong>Titre :</strong> Expert en Marketing Digital</p>
+                    <p><strong>Biographie complète :</strong> Jean est un expert en stratégie numérique avec une grande expérience dans l'optimisation des campagnes publicitaires en ligne. Il a travaillé avec plusieurs grandes marques pour maximiser leur visibilité et leur conversion. À cette conférence, il partagera des conseils pratiques pour optimiser votre présence en ligne.</p>
+                    <p><strong>Horaire de présentation :</strong> 10h00 - 11h00</p>
+                    <a href="https://www.linkedin.com/in/jeandupont" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intervenant 2 -->
+        <div class="speaker">
+            <img src="../img/speaker2.jpg" alt="Marie Leclerc">
+            <h3>Marie Leclerc</h3>
+            <p class="specialty">Spécialiste en Développement Personnel</p>
+            <p>Marie est une coach certifiée en développement personnel, et elle guidera les participants dans leur quête de bien-être et de réussite personnelle.</p>
+            <p class="schedule">Horaires : 11h30 - 12h30</p>
+            <button class="btn-modal" onclick="openModal('modal2')">En savoir plus</button>
+            
+            <!-- Modal Content -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <h2>Marie Leclerc</h2>
+                    <p><strong>Titre :</strong> Spécialiste en Développement Personnel</p>
+                    <p><strong>Biographie complète :</strong> Marie est une coach certifiée en développement personnel et un expert en gestion du stress. Elle propose des méthodes pratiques pour améliorer la confiance en soi et l'équilibre dans la vie. Lors de sa présentation, elle partagera des techniques simples pour surmonter les obstacles personnels et professionnels.</p>
+                    <p><strong>Horaire de présentation :</strong> 11h30 - 12h30</p>
+                    <a href="https://www.linkedin.com/in/marieleclerc" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Intervenant 4 -->
+        <div class="speaker">
+            <img src="../img/speaker4.jpg" alt="Sophie Durand">
+            <h3>Sophie Durand</h3>
+            <p class="specialty">Experte en Communication</p>
+            <p>Sophie est spécialisée dans la communication stratégique et aidera les participants à maîtriser l'art de communiquer efficacement dans leur environnement professionnel.</p>
+            <p class="schedule">Horaires : 16h00 - 17h00</p>
+            <button class="btn-modal" onclick="openModal('modal4')">En savoir plus</button>
+            
+            <!-- Modal Content -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <h2>Sophie Durand</h2>
+                    <p><strong>Titre :</strong> Experte en Communication</p>
+                    <p><strong>Biographie complète :</strong> Sophie est une experte en communication qui accompagne des entreprises et des dirigeants dans le développement de leur stratégie de communication interne et externe. Elle partage des techniques pour améliorer la gestion des relations et l'impact des messages dans un environnement professionnel.</p>
+                    <p><strong>Horaire de présentation :</strong> 16h00 - 17h00</p>
+                    <a href="https://www.linkedin.com/in/sophiedurand" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Événement Inspirant. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

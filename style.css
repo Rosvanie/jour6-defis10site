@@ -1,0 +1,218 @@
+/* Général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header Hero Section */
+.hero {
+    height: 100vh;
+    background: url('img/event-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #F5A623;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #D48817;
+}
+
+/* Boutons */
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tickets-section .btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.tickets-section .btn:hover {
+    background-color: #357ABD;
+}
+
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(135deg, #4A90E2, #F5A623);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Tickets Section */
+.tickets-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.ticket {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ticket h3 {
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #F5A623;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #4A90E2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #F5A623;
+}
+
+
+/* Responsivité - Media Queries */
+
+/* Mobile (small screens) */
+@media (max-width: 600px) {
+    .hero {
+        height: 70vh;
+    }
+    .hero-content {
+        padding: 15px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .tickets-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ticket {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
+
+/* Tablet (medium screens) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .hero {
+        height: 80vh;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .tickets-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ticket {
+        width: 45%;
+    }
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop (large screens) */
+@media (min-width: 1025px) {
+    .hero {
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .tickets-section {
+        justify-content: space-around;
+    }
+    .ticket {
+        width: 30%;
+    }
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,269 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/background2.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Event Description */
+.event-description {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.event-description h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.event-description p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Registration Section */
+.registration-section {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.registration-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #E64A19;
+}
+
+/* Message de succès */
+.success-message {
+    display: none;
+    background-color: #4CAF50; /* Vert pour indiquer le succès */
+    color: white;
+    font-size: 1.5rem; /* Texte bien visible */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto; /* Centré */
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons a {
+    color: #4A90E2;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #FF5722;
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE STYLES */
+
+/* For screens smaller than 768px (tablets and below) */
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .event-description h2 {
+        font-size: 2rem;
+    }
+
+    .event-description p {
+        font-size: 1rem;
+    }
+
+    .registration-section h2 {
+        font-size: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .success-message {
+        font-size: 1.2rem;
+    }
+
+    footer .social-icons a {
+        margin: 0 5px;
+    }
+}
+
+/* For screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+    .hero {
+        height: 30vh;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .event-description h2 {
+        font-size: 1.8rem;
+    }
+
+    .event-description p {
+        font-size: 1rem;
+    }
+
+    .registration-section h2 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .success-message {
+        font-size: 1.2rem;
+    }
+
+    footer .social-icons a {
+        margin: 0 3px;
+    }
+}

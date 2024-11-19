@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de l'Événement</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Conférence Inspirante 2024</h1>
+            <p>Un événement unique pour explorer de nouvelles idées et rencontrer les leaders du domaine.</p>
+        </div>
+    </header>
+
+    <!-- Event Description -->
+    <section class="event-description">
+        <h2>À propos de l'Événement</h2>
+        <p>
+            La Conférence Inspirante 2024 est une opportunité exceptionnelle pour partager, apprendre et explorer les
+            tendances actuelles du secteur. Rejoignez-nous pour une expérience enrichissante et mémorable !
+        </p>
+        <div class="details">
+            <p><strong>📅 Date :</strong> 10 décembre 2024</p>
+            <p><strong>📍 Lieu :</strong> Palais des Congrès, Dakar</p>
+            <p><strong>⏰ Horaires :</strong> 09h00 - 18h00</p>
+        </div>
+        <!-- Speakers Button -->
+        <div class="speakers-button">
+            <button onclick="window.location.href='speakers.html'">Voir les Intervenants</button>
+        </div>
+    </section>
+
+    <section class="registration-section">
+        <h2>Inscrivez-vous maintenant</h2>
+        <form id="registration-form" class="registration-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="ticket">Type de billet</label>
+                <select id="ticket" name="ticket" required>
+                    <option value="standard">Standard - 10,000 XOF</option>
+                    <option value="vip">VIP - 25,000 XOF</option>
+                    <option value="business">Entreprise - 75,000 XOF</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Valider l'inscription</button>
+        </form>
+        <p id="success-message" class="success-message" style="display: none;">Inscription réussie ! Nous avons hâte de vous voir.</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Conférence Inspirante. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
